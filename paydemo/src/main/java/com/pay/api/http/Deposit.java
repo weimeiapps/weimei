@@ -33,7 +33,7 @@ public class Deposit extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		try{
-			logger.info("测试demo，代收请求");
+			logger.info("测试demo，代收请求111");
 			String clientNumber = request.getParameter("clientNumber");
 			String userAccount = request.getParameter("userAccount");
 			String amount = request.getParameter("amount");
