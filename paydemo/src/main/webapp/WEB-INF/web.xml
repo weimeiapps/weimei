@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+  <session-config>
+    <session-timeout>3000</session-timeout>
+  </session-config>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>Deposit</display-name>
+    <servlet-name>Deposit</servlet-name>
+    <servlet-class>com.pay.api.http.Deposit</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Deposit</servlet-name>
+    <url-pattern>/Deposit</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Withdraw</display-name>
+    <servlet-name>Withdraw</servlet-name>
+    <servlet-class>com.pay.api.http.Withdraw</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Withdraw</servlet-name>
+    <url-pattern>/Withdraw</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>GetOrder</display-name>
+    <servlet-name>GetOrder</servlet-name>
+    <servlet-class>com.pay.api.http.GetOrder</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GetOrder</servlet-name>
+    <url-pattern>/GetOrder</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>TaskNotify</display-name>
+    <servlet-name>TaskNotify</servlet-name>
+    <servlet-class>com.pay.api.http.TaskNotify</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>TaskNotify</servlet-name>
+    <url-pattern>/TaskNotify</url-pattern>
+  </servlet-mapping>
+  
+  
+ <!--  
+       <security-constraint>   
+       <web-resource-collection >   
+              <web-resource-name >SSL</web-resource-name>   
+              <url-pattern>/*</url-pattern>   
+       </web-resource-collection>  
+                               
+       <user-data-constraint>   
+              <transport-guarantee>CONFIDENTIAL</transport-guarantee>   
+       </user-data-constraint>   
+</security-constraint>  -->
+</web-app>

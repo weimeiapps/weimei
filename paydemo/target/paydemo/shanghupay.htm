@@ -1,0 +1,213 @@
+<html>
+<head>
+    <title>出金入金查询指标系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="ext-3.2.1/resources/css/ext-all.css">
+    <link rel="stylesheet" type="text/css" href="css/file-upload.css">
+
+    <script type="text/javascript" src="ext-3.2.1/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="ext-3.2.1/ext-all.js"></script>
+    <script type="text/javascript" src="ext-3.2.1/src/locale/ext-lang-zh_CN.js"></script>
+    <!--<script type="text/javascript" src="shanghu12/js/FileUploadField.js"></script>
+    <script type="text/javascript" src="shanghu2/js/FileImportWindow.js"></script>-->
+    <script type="text/javascript" src="DataWindow2.js"></script>
+    <script type="text/javascript" src="shanghu_02.js"></script>
+    <script src="jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/JQuery.md5.js" type="text/javascript" charset="utf-8"></script>
+
+    <link rel="stylesheet" type="text/css" href="EasyUI/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="EasyUI/themes/icon.css">
+
+ 
+    <script src="EasyUI/js/jquery.easyui.min.js"></script>
+
+    <script type="text/javascript">
+        Ext.BLANK_IMAGE_URL = 'ext-3.2.1/resources/images/default/s.gif';
+    </script>
+
+    <style type="text/css">
+        .style4 { color: #0000FF }
+        }
+    </style>
+
+
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0"
+	marginheight="0">
+	
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+		<td valign="top" class="main_bg">
+
+            <!--<script language="javascript"src="shanghu/js/tableorder.js"></script>--> 
+            <script language="javascript">
+	            //addEvent(window, "load", sortables_init);
+            </script>
+
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td>
+				<table width="100%" border="0" align="center" cellpadding="0"
+					cellspacing="0" background="images/top_bg.jpg"
+					style="background-position: right; background-repeat: no-repeat">
+					<tr>
+						<td width="194" align="left" height="55"></td>
+						<td align="right">
+						<table border="0" align="right" cellpadding="0" cellspacing="0"
+							class="state">
+							<tr>
+									<td>&nbsp;|&nbsp;<a href="index.html">退出系统</a></td>
+							</tr>
+						</table>
+						</td>
+						<td width="10px">&nbsp;</td>
+					</tr>
+				</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="menu" align=center><script language="javascript"
+					src=""></script></td>
+			</tr>
+		</table>
+		<table width="98%" border="0" cellpadding="0" cellspacing="0"
+			align="center" height="100%">
+			<tr>
+				<td width="11" valign="top"></td>
+				<td valign="top">
+				<table width="100%" border="0" cellpadding="0" cellspacing="0">
+					<tr>
+
+						<td class="user_location">您现在所在的位置是：查询管理&gt;&gt;代收代付交易状态查询</td>
+						<td width="9"></td>
+					</tr>
+					<tr>
+						<td class="line_2px"></td>
+					</tr>
+				</table>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td colspan="2" valign="top" height="400px">
+						<table width="99%" border="0" cellspacing="0" cellpadding="0">
+							<tr>
+                                <td valign="top">
+                                    <br>
+                                    <p>
+                                        商户号:<input id="clientNumber" type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="000" style="width:136px; height:30px; ">&nbsp;
+                                        交易单号:<input id="orderId" type="text" class="textbox-text validatebox-text textbox-prompt" autocomplete="off" placeholder="000" style="width:136px; height:30px; ">
+                                        <a  id="query" class="easyui-linkbutton l-btn l-btn-small easyui-fluid" style="width: 60px; height: 30px;">
+                                                <span class="l-btn-text">查询</span>
+                                        </a>
+                                    </p>
+
+                                    <br>
+                                    <table id="dg" class="easyui-datagrid" style="width:100%;height:250px"
+                                           data-options="singleSelect:true,collapsible:true,url:'',method:'get'">
+                                        <thead>
+                                            <tr>
+                                                <th data-options="field:'clientNumber',align:'center',resizable:false" width="15%">商户号</th>
+                                                <th data-options="field:'orderId',align:'center',resizable:false" width="15%">交易单号</th>
+                                                <th data-options="field:'status',align:'center',resizable:false" width="15%">交易状态</th>
+                                                <th data-options="field:'verifyText',align:'center',resizable:false" width="25%">验证文本</th>
+                                                <th data-options="field:'error',align:'center',resizable:false" width="15%">是否有错误</th>
+                                            </tr>
+                                        </thead>
+                                    </table>
+
+
+                                </td>
+							</tr>
+						</table>
+						</td>
+					</tr>
+				</table>
+				</td>
+				<td width="11" valign="top">&nbsp;</td>
+			</tr>
+			<tr>
+				<td colspan="3" valign="top">&nbsp;</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+	<tr>
+		<td height="22" valign="bottom">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0">
+			<tr>
+				<td class="copyright">&copy;
+				&nbsp;&nbsp;&nbsp;&nbsp;建议使用环境为IE6/google&nbsp;&nbsp;&nbsp;&nbsp;分辨率为1024*768或以上</td>
+			</tr>
+		</table>
+		</td>
+	</tr>
+</table>
+
+
+  <script>
+
+
+
+      $(function () {
+
+
+          $("#query").click(function () {
+          
+            var clientNumber = $("#clientNumber").val();
+            var orderId = $("#orderId").val();
+            var beforMD5 = clientNumber + orderId;
+            var keyMD5Val = hex_md5(beforMD5 + keys);
+            var verifyText = keyMD5Val.toUpperCase()
+
+
+              //ajax 返回json 直接绑定给datagrid
+
+              var pdata = {
+                  "clientNumber": clientNumber,
+                  "orderId": orderId,
+                  "verifyText": verifyText
+              };
+
+             //alert(JSON.stringify(pdata));
+              console.log(JSON.stringify(pdata))
+              var url = 'http://api.bestpayltd.com:8000/getOrderState';
+              $.ajax({
+                  url: url,
+                  dataType: 'json',
+                  contentType: 'application/json',
+                  processData: false,
+                  type: 'post',
+                  data: JSON.stringify(pdata),
+                  success: function (data) {
+                      debugger;
+                      console.log(JSON.stringify(data))
+                      
+                      $('#dg').datagrid({
+                  data: [
+                      { clientNumber: data.clientNumber, orderId: data.orderNumber, status: data.status, verifyText: data.verifyText, error:data.error}
+                  ]
+              });
+                     // alert(data);
+                  },
+                  error: function (XMLHttpRequest, textStatus, errorThrown) {
+                      alert(XMLHttpRequest.status);
+                      alert(XMLHttpRequest.readyState);
+                      alert(textStatus);
+                  }
+              }); 
+
+              
+
+
+
+             
+
+          });
+
+      })
+
+  </script>
+
+<!-- End ImageReady Slices -->
+</body>
+</html>

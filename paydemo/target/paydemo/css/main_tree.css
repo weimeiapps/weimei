@@ -1,0 +1,562 @@
+/*---------------------------------固定样式开始---------------------------------------*/
+
+body{
+	margin:0px;
+	font-size:12px;
+	text-align:center;
+	background-image:url(images/mainbg.gif);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	height:100%;
+}
+td
+{
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+}
+.login_title {
+	FONT-WEIGHT: bolder;
+	FONT-FAMILY: "黑体";
+	FONT-SIZE: 35px;
+	COLOR: #3177CD;
+	FONT-STYLE: normal
+}
+.button {
+	BORDER-RIGHT: darkgray 1px solid;
+	BORDER-TOP: darkgray 1px solid;
+	BACKGROUND: url(images/button.gif);
+	BORDER-LEFT: darkgray 1px solid;
+	BORDER-BOTTOM: darkgray 1px solid;
+	font-size:12px;
+	cursor: hand;
+	HEIGHT: 23px;
+	background-image: url("images/btn-bg.gif");
+	padding-left:3px;
+	padding-right:3px;
+	margin-left:3px;
+	margin-right:3px;
+	padding-top:3px;
+}
+select
+{
+font-size:12px;
+}
+a
+{
+	color:#000000;
+	text-decoration:none;
+}
+a:hover
+{
+	color:#FF0000;
+	text-decoration:underline;
+}
+/*----------------------------固定样式结束----------------------------------------*/
+
+
+
+
+
+.input {
+	BORDER: dimgray 1px solid;
+	FONT-SIZE: 12px;
+	FONT-FAMILY: verdana;
+}
+
+input {
+	font-size:12px;}
+
+textarea {
+	font-size:12px;}
+
+
+/*---------------------------------版权信息开始-----------------------------------------*/
+
+.copyright		
+{
+background-image:url(../images/login_05.gif);
+font-family:Verdana, Arial, Helvetica, sans-serif;
+color:#FFFFFF;
+font-size:12px;
+text-align:right;
+line-height:22px;
+padding-right:20px;
+height:22px;
+}
+
+.copyright_table
+{
+left:0px;
+bottom:0px;
+vertical-align:bottom;
+}
+
+.copyright_table table
+{
+}
+/*-------------------------------------------版权信息结束-----------------------------------------------------*/
+
+
+/*-------------------------------------------用户状态栏开始-----------------------------------------------------*/
+
+.state td
+{
+	border:1px solid #000000;
+	text-align:center;
+	padding:5px;
+	margin:5px;
+}
+/*-------------------------------------------用户状态栏结束-----------------------------------------------------*/
+
+
+
+
+/*-------------------------主菜单------------------------------*/
+.menu
+{
+	/*background-color:#3179CE;*/
+	color:#FFFFFF;
+	font-size:12px;
+	text-align:right;
+	line-height:25px;
+	height:25px;
+	padding-left:10px;
+	background-image:url(../images/login_05.gif);
+}
+
+.menu a
+{
+	color:#FFFFFF;
+	font-size:12px;
+	text-align:right;
+	line-height:25px;
+	height:25px;
+	text-decoration:none;
+	padding-right:15px;
+	padding-left:15px;
+	cursor:default;
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(Strength=1,direction=135);*/
+}
+
+.menu a:hover
+{
+	color:#000066;
+	font-size:12px;
+	text-align:right;
+	line-height:25px;
+	height:25px;
+	text-decoration:none;
+	background-image:url(../images/login_05.gif);
+	background-position:top;
+	background-repeat:repeat-x;
+}
+
+.menu .logout
+{
+	color:#FFFFFF;
+	font-size:12px;
+	text-align:right;
+	line-height:25px;
+	padding-right:10px;
+	padding-left:10px;
+	height:25px;
+	cursor:hand;
+}
+.menu .logout a
+{
+	color:#FFFFFF;
+	font-size:12px;
+	text-align:right;
+	line-height:25px;
+	padding-right:10px;
+	padding-left:10px;
+	height:25px;
+	cursor:hand;
+}
+/*----------------------主菜单结束--------------------------*/
+
+
+
+
+
+
+/*-------------------弹出菜单的样式控制--------------------*/
+.popupmenu
+{
+	background-color:#FCFCFC;
+	border-top:1px solid #999999;
+	filter:progid:DXImageTransform.Microsoft.Shadow(Strength=5,Direction=145,color=#999999);
+}
+.popupmenu a
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#999999;
+	text-decoration:none;
+	padding:2px;
+	width:100%;
+	text-align:left;
+	padding-left:5px;
+	border-bottom:1px solid #7AC4EA;
+	border-left:1px solid #7AC4EA;
+	border-right:1px solid #7AC4EA;
+	cursor:hand;
+	/*filter:;*/
+}
+.popupmenu a:hover
+{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#000000;
+	text-decoration:none;
+	width:100%;
+	text-align:left;
+	background-color:#EEEEFF;
+	padding:2px;
+	padding-left:5px;
+	border-bottom:1px solid #7AC4EA;
+	border-left:1px solid #7AC4EA;
+	border-right:1px solid #7AC4EA;
+	background-image:url();
+}
+/*-------------------弹出菜单的样式控制结束--------------------*/
+
+
+
+
+
+
+
+
+
+
+/*-----------------------深兰功能栏-----------------------------*/
+.leftfunction
+{
+	border: 1px solid #5F90C5;
+}
+.leftfunction th
+{
+	background-color:#5F90C5;
+	color:#FFFFFF;
+	height:25px;
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	text-align:left;
+	padding-left:17px;
+}
+.leftfunction tbody td
+{
+	background-color:#E8F3FF;
+	color:#000000;
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	text-align:center;
+	padding:12px;
+}
+.leftfunction table
+{
+	background-color:#FFFFFF;
+	border: 1px solid #A9CEF7;
+}
+.leftfunction table th
+{
+	background-color:#D2E3F6;
+	color:#000000;
+	border:2px solid #FFFFFF;
+	padding-top:3px;
+	height:30px;
+}
+.leftfunction table td
+{
+	color:#000000;
+	height:25px;
+	text-align:left;
+	background-image:url(images/array.gif);
+	background-position:15px;
+	background-repeat:no-repeat;
+	padding:0px 0px 0px 30px;
+	background-color:#FFFFFF;
+}
+.leftfunction .noarray
+{
+	color:#000000;
+	height:25px;
+	background-image:url();
+	padding:5px;
+	background-color:#FFFFFF;
+}
+/*-----------------深兰功能栏结束------------------*/
+
+
+
+
+
+
+
+/*-------------------兰底色标题栏-------------------*/
+.listclass
+{
+	background-color:#FFFFFF;
+	border: 1px solid #A9CEF7;
+}
+.listclass th
+{
+	background-color:#D2E3F6;
+	color:#000000;
+	border:2px solid #FFFFFF;
+	padding-top:3px;
+	height:30px;
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	text-align:left;
+	padding-left:15px;
+}
+.listclass td
+{
+	color:#999999;
+	height:25px;
+	text-align:left;
+	background-image:url(images/array.gif);
+	background-position:15px 4px;
+	background-repeat:no-repeat;
+	padding:0px 0px 0px 30px;
+	background-color:#FFFFFF;
+	font-size:12px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-style:normal;
+	font-weight:normal;
+	line-height:20px;
+	padding-bottom:10px;
+
+}
+.listclass .noarray
+{
+	color:#000000;
+	height:25px;
+	background-image:url();
+	padding:5px;
+	background-color:#FFFFFF;
+}
+.listclass .noarray td
+{
+	color:#000000;
+	height:25px;
+	background-image:url();
+	padding:5px;
+	background-color:#FFFFFF;
+}
+
+.listclass a
+{
+	text-decoration:none;
+	font-size:12px;
+	color:#000000;
+}
+.listclass a:hover
+{
+	text-decoration:underline;
+	font-size:12px;
+	color:#FF0000;
+}
+/*------------------兰底色标题栏结束----------------*/
+
+
+
+
+
+
+.maintitle
+{
+	FONT-FAMILY: "黑体";
+	font-size:18px;
+	line-height:30px;
+}
+.maintext
+{
+	line-height:22px;
+	padding-bottom:20px;
+	text-indent: 24px;
+}
+
+
+
+.importantmsgtips
+{
+	color:#D2E3F6;
+	font-weight:bold;
+}
+.importantmsg
+{
+	color:#FFFFFF;
+}
+
+
+
+
+
+
+
+/*-----------------专题切换页-----------------*/
+.subject_onselected
+{
+	border:1px solid #5E90C5;
+	background-color:#5E90C5;
+	color:#FFFFFF;
+}
+.subject_onselected a
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.subject_onselected a:hover
+{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+
+.subject
+{
+	background-color:#F9F9F9;
+	color:#000000;
+}
+.subject a
+{
+	color:#000000;
+	text-decoration:none;
+}
+.subject a:hover
+{
+	color:#FF0000;
+	text-decoration:underline;
+}
+/*-------------------专题切换页结束-----------------------*/
+
+.tree
+{
+	line-height:25px;
+}
+
+.tree td
+{
+	text-align:left;
+	border:0px;
+}
+
+/*-----------------排序表格的样式控制---------------------*/
+
+.sortable th{
+    background-color:#E1FFFB;
+    text-decoration: none;
+    display: block;
+	border-bottom:1px solid #7AC4EA;
+	padding:5px;
+	font-weight:normal;
+	font-size:12px;
+	border-left:1px solid #EEEEEE;
+	color:#92A05A;
+}
+.ordertablehead .sortheader{
+    text-decoration: none;
+    display: block;
+	padding:3px;
+	color:#5A92A0;
+}
+
+.ordertablehead .sortheader a:hover{
+    text-decoration: none;
+    display: block;
+	padding:3px;
+	color:#5A92A0;
+}
+
+.sortable td{
+	background-color:#FFFFFF;
+	border-bottom:1px solid #EEEEEE;/*#F5FBFF*/
+	border-left:1px solid #EEEEEE;
+	color:#999999;
+}
+.sortable td a:hover{
+	background-color:#FFFFFF;
+	text-decoration:none;
+}
+.sortable .normaltable td{/*-----------无边框表格---------*/
+border:0px;
+background-color:;
+}
+.sortable .normaltable table{
+border:0px;
+background-color:#;
+}
+/*--------------------------------排序表格样式控制结束--------------------------------*/
+
+.garytext
+{
+	color:#999999;
+}
+
+.user_location/*-----位置提示栏-----*/
+{
+	height:33px;
+}
+
+.line_2px/*-----提示栏下方的横线-----*/
+{
+	height:1px;
+	background-color:#A9CEF7;
+}
+
+
+/*------------------------------hlk add -----------------------------------------------*/
+
+.t_menu{
+	BORDER-RIGHT: #b8ced7 1px 
+	solid; BORDER-TOP: #b8ced7 1px solid; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#ddddff); OVERFLOW: hidden; BORDER-LEFT: #b8ced7 1px solid; LINE-HEIGHT: 15px; BORDER-BOTTOM: #b8ced7 1px solid; HEIGHT: 18px
+}
+
+.t_menu_active{
+	BORDER-RIGHT: #0055A2 1px 
+	solid; BORDER-TOP: #0055A2 1px dotted; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#FFFFFF, EndColorStr=#ddddff); OVERFLOW: hidden; BORDER-LEFT: #0055A2 1px dotted; LINE-HEIGHT: 15px; BORDER-BOTTOM: #0055A2 1px dotted; HEIGHT: 18px
+}
+
+
+/*--------------------------------------------------------------------------------------*/
+
+
+.navpanel {
+	PADDING-RIGHT: 4px; 
+	BORDER-TOP: #b8ced7 1px solid; 
+	PADDING-LEFT: 4px; 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#ffffff, EndColorStr=#E6E8FF); 
+	PADDING-TOP: 1px; 
+	BORDER-BOTTOM: #b8ced7 1px solid; 
+	HEIGHT: 22px
+}
+
+
+.navpanel_active {
+	PADDING-RIGHT: 4px; 
+	BORDER-TOP: #b8ced7 1px solid; 
+	PADDING-LEFT: 4px; 
+	FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr=#E6E8FF, EndColorStr=#ffffff); 
+	PADDING-TOP: 1px;
+	BORDER-BOTTOM: #b8ced7 1px solid; 
+	HEIGHT: 22px
+}
+
+.navpanel_text_active {
+	BORDER-RIGHT: #0055A2 1px dotted; 
+	BORDER-TOP: #0055A2 1px dotted; 
+	PADDING-LEFT: 4px; 
+	BORDER-LEFT: #0055A2 1px dotted; 
+	CURSOR: default; 
+	PADDING-TOP: 1px; 
+	BORDER-BOTTOM: #0055A2 1px dotted
+}
+.navpanel_text {
+	PADDING-LEFT: 4px; WIDTH: 100%; PADDING-TOP: 1px
+}
